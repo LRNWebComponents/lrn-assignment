@@ -1,6 +1,8 @@
 # \<lrn-assignment\>
 
+## API/DEMO
 
+[LRNWebComponents Assignment](https://lrnwebcomponents.github.io/lrn-assignment/components/lrn-assignment)
 
 ## Install the Polymer-CLI
 
