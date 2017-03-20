@@ -11,6 +11,7 @@
     <link rel='import' href='../../iron-demo-helpers/demo-pages-shared-styles.html'>
     <link rel='import' href='../../iron-demo-helpers/demo-snippet.html'>
     <link rel='import' href='../lrn-assignment.html'>
+    <link rel='import' href='../lrn-assignment-button.html'>
 
     <style is='custom-style' include='demo-pages-shared-styles'>
       .vertical-section-container {
@@ -30,6 +31,13 @@
       <demo-snippet>
         <template>
           <lrn-assignments assignments='[{"title":"Assignment 1", "actions": ["details"]},{"title":"Assignment 2", "actions": ["detail"]}]'></lrn-assignments>
+        </template>
+      </demo-snippet>
+      <h3>Assignment Buttons</h3>
+      <demo-snippet>
+        <template>
+          <lrn-assignment-button title="Assignment 1" url="http://elmsln.org" open></lrn-assignment-button>
+          <lrn-assignment-button title="Assignment 1" url="http://elmsln.org" complete></lrn-assignment-button>
         </template>
       </demo-snippet>
     </div>
