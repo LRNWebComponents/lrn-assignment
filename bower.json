@@ -4,7 +4,9 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",
     "paper-card": "PolymerElements/paper-card#^1.1.4",
-    "lrn-icons": "LRNWebComponents/lrn-icons#^0.0.1"
+    "lrn-icons": "LRNWebComponents/lrn-icons#^1.0.4",
+    "lrndesign-card": "LRNWebComponents/lrndesign-card",
+    "lrndesign-drawer": "LRNWebComponents/lrndesign-drawer"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",

@@ -21,13 +21,31 @@
   </head>
   <body>
     <div class='vertical-section-container centered'>
-      <h3>Basic lrn-assignment demo</h3>
+      <h3>Basic lrn-assignment demo (default)</h3>
       <demo-snippet>
         <template>
-          <lrn-assignment title="Assignment Title" actions="['details']"></lrn-assignment>
+          <lrn-assignment title="Assignment Title" details="This is the assignment directions" actions="['details']"></lrn-assignment>
         </template>
       </demo-snippet>
-      <h3>Basic lrn-assignments demo</h3>
+      <h3>Basic lrn-assignment as card</h3>
+      <demo-snippet>
+        <template>
+          <lrn-assignment title="Assignment Title" details="This is the assignment directions" actions="['details']" display="paper-card"></lrn-assignment>
+        </template>
+      </demo-snippet>
+      <h3>Basic lrn-assignment as paper-card</h3>
+      <demo-snippet>
+        <template>
+          <lrn-assignment title="Assignment Title" details="This is the assignment directions" actions="['details']" display="card"></lrn-assignment>
+        </template>
+      </demo-snippet>
+      <h3>Basic lrn-assignment as lrndesign-drawer</h3>
+      <demo-snippet>
+        <template>
+          <lrn-assignment title="Assignment Title" details="This is the assignment directions" actions="['details']" display="drawer"></lrn-assignment>
+        </template>
+      </demo-snippet>
+      <h3>Basic lrn-assignments demo (default)</h3>
       <demo-snippet>
         <template>
           <lrn-assignments assignments='[{"title":"Assignment 1", "actions": ["details"]},{"title":"Assignment 2", "actions": ["detail"]}]'></lrn-assignments>
