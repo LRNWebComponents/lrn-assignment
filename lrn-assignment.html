@@ -3,6 +3,7 @@
 <link rel="import" href="../paper-button/paper-button.html">
 <link rel="import" href="../lrndesign-card/lrndesign-card.html">
 <link rel="import" href="../lrndesign-drawer/lrndesign-drawer.html">
+<link rel="import" href="../lrnsys-behaviors/lrnsys-behaviors.html">
 
 <!--
 `lrn-assignment`
@@ -55,7 +56,7 @@
     Polymer({
 
       is: 'lrn-assignment',
-
+      behaviors: [LRNBehaviors.DisplayBehaviors],
       properties: {
         title: {
           type: String
@@ -79,30 +80,7 @@
         },
         actions: {
           type: Object
-        },
-        display: {
-          type: String,
-          value: 'card',
-          notify: true
-        },
-      },
-      getDisplay: function(display) {
-        var parts = (display || '').split('-');
-        this._displayStyle = parts.pop();
-        this._displayFamily = parts.pop() || 'lrndesign';
-        return this._displayFamily + '-' + this._displayStyle;
-      },
-      matchDisplay: function(test, display) {
-        // verify that the case requested matches the display
-        // implemented by the user. This wrapper helps ensure
-        // that shorthand display calls like card end up matching
-        // the same as longhand lrndesign-card. This also makes it
-        // so that paper-card would not match card or lrndesign-card
-        // which are all technically different things.
-        if (this.getDisplay(test) == this.getDisplay(display)) {
-          return true;
         }
-        return false;
       }
     });
   </script>
