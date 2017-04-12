@@ -4,12 +4,12 @@
 <link rel="import" href="../lrndesign-card/lrndesign-card.html">
 <link rel="import" href="../lrndesign-drawer/lrndesign-drawer.html">
 <link rel="import" href="../lrnsys-behaviors/lrnsys-behaviors.html">
-
+<link rel="import" href="../lrndesign-avatar/lrndesign-avatar.html">
 <!--
 `lrn-assignment`
 
 
-@demo demo/index.html 
+@demo demo/index.html
 -->
 
 <dom-module id="lrn-assignment">
@@ -48,6 +48,11 @@
         <h2>{{title}}</h2>
         <p>{{details}}</p>
       </lrndesign-drawer>
+    </template>
+
+    <template is="dom-if" if="{{matchDisplay('avatar', display)}}">
+      <lrndesign-avatar label="{{title}}" two-chars>
+      </lrndesign-avatar>
     </template>
 
   </template>
