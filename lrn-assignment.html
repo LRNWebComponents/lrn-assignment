@@ -5,6 +5,8 @@
 <link rel="import" href="../lrndesign-drawer/lrndesign-drawer.html">
 <link rel="import" href="../lrnsys-behaviors/lrnsys-behaviors.html">
 <link rel="import" href="../lrndesign-avatar/lrndesign-avatar.html">
+<link rel="import" href="../lrndesign-panelcard/lrndesign-panelcard.html">
+
 <!--
 `lrn-assignment`
 
@@ -55,6 +57,12 @@
       </lrndesign-avatar>
     </template>
 
+    <template is="dom-if" if="{{matchDisplay('panelcard', display)}}">
+      <lrndesign-panelcard title="{{title}}" display-style="{{displayStyle}}">
+      {{details}}
+      </lrndesign-panelcard>
+    </template>
+
   </template>
 
   <script>
@@ -63,15 +71,27 @@
       is: 'lrn-assignment',
       behaviors: [LRNBehaviors.DisplayBehaviors],
       properties: {
+        /**
+         * Title
+         */
         title: {
           type: String
         },
+        /**
+         * Image url
+         */
         image: {
           type: String
         },
+        /**
+         * Details of the assignment
+         */
         details: {
           type: String
         },
+        /**
+         * url
+         */
         url: {
           type: String
         },
@@ -114,7 +134,7 @@
     <template is="dom-repeat" items="{{assignments}}">
       <lrn-assignment title="{{item.title}}" actions="{{item.actions}}"></lrn-assignment>
     </template>
-    
+
     <template is="dom-if" if="{{url}}">
       <iron-ajax
         auto
@@ -122,7 +142,7 @@
         handle-as="json"
         on-response="handleResponse"></iron-ajax>
     </template>
-    
+
   </template>
   <script>
     Polymer({
@@ -137,7 +157,9 @@
           type: String,
           reflectToAttribute: true
         },
-        url: String
+        url: {
+          type: String
+        }
       },
       assignmentsChanged: function(assignments) {
         if (assignments.length <= 1) {
