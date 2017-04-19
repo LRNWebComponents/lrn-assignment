@@ -6,6 +6,7 @@
 <link rel="import" href="../lrnsys-behaviors/lrnsys-behaviors.html">
 <link rel="import" href="../lrndesign-avatar/lrndesign-avatar.html">
 <link rel="import" href="../lrndesign-panelcard/lrndesign-panelcard.html">
+<link rel="import" href="../lrndesign-buttondialog/lrndesign-buttondialog.html">
 
 <!--
 `lrn-assignment`
@@ -61,6 +62,12 @@
       <lrndesign-panelcard title="{{title}}" display-style="{{displayStyle}}">
       {{details}}
       </lrndesign-panelcard>
+    </template>
+
+    <template is="dom-if" if="{{matchDisplay('buttondialog', display)}}">
+      <lrndesign-buttondialog title="{{title}}" button-label="{{title}}" display-style="{{displayStyle}}">
+      {{details}}
+      </lrndesign-buttondialog>
     </template>
 
   </template>
