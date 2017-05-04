@@ -1,0 +1,48 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-avatar/paper-avatar.html">
+<!--
+`lrndesign-avatar`
+A LRN element
+
+@demo demo/index.html 
+-->
+
+<dom-module id="lrndesign-avatar">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <paper-avatar label="{{label}}" src="{{src}}" two-chars="{{twoChars}}" colors="{{colors}}" jdenticon="{{jdenticon}}"></paper-avatar>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'lrndesign-avatar',
+
+      properties: {
+        label: {
+          type: String,
+          value: 'lrndesign-avatar',
+        },
+        src: {
+          type: String
+        },
+        twoChars: {
+          type: Boolean,
+          value: false
+        },
+        colors: {
+          type: Array,
+        },
+        jdenticon: {
+          type: Boolean,
+          value: false
+        }
+      },
+
+    });
+  </script>
+</dom-module>
