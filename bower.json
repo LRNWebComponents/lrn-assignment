@@ -3,7 +3,7 @@
   "main": "lrn-assignment.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",
-    "paper-card": "PolymerElements/paper-card#^1.1.4",
+    "paper-card": "PolymerElements/paper-card#^2.0.0",
     "lrn-icons": "LRNWebComponents/lrn-icons#^1.0.4",
     "lrndesign-card": "LRNWebComponents/lrndesign-card",
     "lrndesign-drawer": "LRNWebComponents/lrndesign-drawer",
