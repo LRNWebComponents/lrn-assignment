@@ -8,8 +8,8 @@
     "lrndesign-card": "LRNWebComponents/lrndesign-card",
     "lrndesign-drawer": "LRNWebComponents/lrndesign-drawer",
     "lrnsys-behaviors": "LRNWebcomponents/lrnsys-behaviors#^1.0.0",
-    "lrndesign-avatar": "LRNWebComponents/lrndesign-avatar#^0.0.1",
-    "lrndesign-panelcard": "LRNWebComponents/lrndesign-panelcard#^0.0.6",
+    "lrndesign-avatar": "LRNWebComponents/lrndesign-avatar#^1.0.1",
+    "lrndesign-panelcard": "LRNWebComponents/lrndesign-panelcard#^1.0.1",
     "lrndesign-buttondialog": "LRNWebComponents/lrndesign-buttondialog#^0.0.1"
   },
   "devDependencies": {
